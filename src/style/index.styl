@@ -1,0 +1,132 @@
+@import url('../../node_modules/jointjs/dist/joint.css')
+@import url('../../static/iconfont/iconfont.css')
+
+// @import url('../font/iconfont/iconfont.css')
+themeColor = lightcoral
+
+vendor(prop, args)
+  {prop} args
+  -moz-{prop} args
+  -ms-{prop} args
+  -o-{prop} args
+  -webkit-{prop} args
+
+tools-box()
+  height 40px
+  line-height 40px
+  text-align center
+  width 40px
+
+@media screen and (min-width: 1680px)
+  html, body
+    font-size 50px
+
+@media screen and (min-width: 1440px) and (max-width: 1679px)
+  html, body
+    font-size 40px
+
+@media screen and (min-width: 1360px) and (max-width: 1439px)
+  html, body
+    font-size 35px
+
+@media screen and (max-width: 1359px)
+  html, body
+    font-size 25px
+
+ul
+  margin 0
+  padding 0
+
+li
+  list-style none
+
+main
+  bottom 0
+  left 0
+  overflow auto
+  position fixed
+  top 0
+  width 100%
+
+  div#wrap
+    background #e8e8e8
+    height 100%
+    overflow auto
+
+    >div
+      height 3100px
+      width 3200px
+
+      div#paper
+        margin 100px
+
+  div#zoom
+    bottom 40px
+    position absolute
+    right 40px
+
+    span
+      background rgba(255, 255, 255, .1)
+      border 1px solid #999
+      border-radius 50%
+      color #999
+      cursor pointer
+      display block
+      font-size 20px
+      height 25px
+      line-height 25px
+      text-align center
+      width 25px
+      vendor('user-select', none)
+
+      &.in
+        margin-bottom .2rem
+
+      &:hover
+        border 1px solid #333
+        box-shadow 0 0 .1rem #999
+        color #333
+
+  div#tools
+    border-radius 50%
+    box-shadow 0 0 .1rem #999
+    left 40px
+    position absolute
+    top 40px
+    tools-box()
+
+    >span.iconfont
+      background #ff9800
+      border-radius 50%
+      box-shadow 0 0 5px #795548
+      color #fff
+      cursor pointer
+      display block
+      font-size 30px
+      position absolute
+      tools-box()
+      vendor('user-select', none)
+
+    >ul
+      background #fff
+      border 1px solid #dedede
+      border-radius 0 17px 17px
+      display flex
+      height 34px
+      left 20px
+      line-height 35px
+      overflow hidden
+      position absolute
+      top 2px
+      width 0
+
+      >li
+        color #ef6c00
+        cursor pointer
+        flex-shrink 0
+        font-size 30px
+        margin 0 5px
+        width 30px
+
+        &:active
+          color #d84315

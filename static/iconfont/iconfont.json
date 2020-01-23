@@ -1,0 +1,51 @@
+{
+  "id": "813120",
+  "name": "jointjs",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "jointjs icon",
+  "glyphs": [
+    {
+      "icon_id": "11474219",
+      "name": "all",
+      "font_class": "all",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "11481287",
+      "name": "all-fill",
+      "font_class": "all-fill",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
+      "icon_id": "11481357",
+      "name": "play-fill",
+      "font_class": "play-fill",
+      "unicode": "e72f",
+      "unicode_decimal": 59183
+    },
+    {
+      "icon_id": "11481382",
+      "name": "stop-fill",
+      "font_class": "stop-fill",
+      "unicode": "e738",
+      "unicode_decimal": 59192
+    },
+    {
+      "icon_id": "12011574",
+      "name": "add-select",
+      "font_class": "add-select",
+      "unicode": "e7b0",
+      "unicode_decimal": 59312
+    },
+    {
+      "icon_id": "12011622",
+      "name": "sami-select",
+      "font_class": "sami-select",
+      "unicode": "e7b1",
+      "unicode_decimal": 59313
+    }
+  ]
+}
