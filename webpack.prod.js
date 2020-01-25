@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 module.exports = merge(common, {
   mode: 'production',
-  externals: {
+  /* externals: {
     jquery: {
       amd: 'jquery',
       commonjs: 'jquery',
@@ -24,7 +24,7 @@ module.exports = merge(common, {
       commonjs2: 'lodash',
       root: '_'
     }
-  },
+  }, */
   optimization: {
     splitChunks: {
       chunks: 'all',

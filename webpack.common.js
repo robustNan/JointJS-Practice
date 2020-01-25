@@ -6,18 +6,24 @@ const path = require('path');
 module.exports = {
   entry: './src/script/main.js',
   output: {
-    filename: '[name]-bundle.js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, './dist')
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader'
+        })
       },
       {
         test: /\.styl$/,
-        use: ['style-loader', 'css-loader', 'stylus-loader']
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'stylus-loader']
+        })
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
